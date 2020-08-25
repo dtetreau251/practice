@@ -1,0 +1,146 @@
+body {
+    background-color: beige;
+}
+
+.switzerland {
+    height: 350px;
+    width: 550px;
+    background-color: #D52B1E;
+    position: absolute;
+}
+
+    .vertical {
+        position: relative;
+        background-color: white;
+        height: 90%;
+        width: 14%;
+        left: 42%;
+        bottom: 13%;
+    }
+
+    .horizontal {
+        position: relative;
+        background-color: white;
+        height: 19%;
+        width: 70%;
+        left:15%;
+        top: 39%;
+    }
+
+.sweden {
+    height:350px;
+    width: 550px;
+    background-color: #006aa8;
+    position: absolute;
+    top: 400px;
+}
+
+    .sideways {
+        height: 75px;
+        width: 100%;
+        background-color: #fecd00;
+        top: 40%;
+        position: relative;
+    }
+
+    .upwards {
+        height: 100%;
+        width: 72px;
+        background-color: #fecd00;
+        left: 25%;
+        bottom: 21%;
+        position: relative;
+    }
+
+.gambia {
+    height:350px;
+    width: 550px;
+    background-color: #CE1126;
+    position: absolute;
+    left:50%;
+}
+
+    .white1 {
+        height: 25px;
+        width: 550px;
+        background-color:white;
+        position: absolute;
+        top: 34%;
+    }
+
+    .blue {
+        height: 80px;
+        width: 550px;
+        background-color: #0C1C8C;
+        position: absolute;
+        top:40%;
+    }
+
+    .white2 {
+        height: 25px;
+        width: 550px;
+        background-color:white;
+        position: absolute;
+        top: 61%;
+    }
+
+    .green {
+        height: 120px;
+        width: 550px;
+        background-color: #3A7728;
+        position: absolute;
+        top: 66%;
+    }
+
+.japan {
+    height:350px;
+    width: 550px;
+    background-color: white;
+    position: absolute;
+    left:50%;
+    top: 400px;
+}
+    .circle {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+        left: 32%;
+        top: 22%;
+    }
+
+.niger {
+    height: 350px;
+    width: 550px;
+    background-color: white;
+    position: absolute;
+    top: 800px;
+}
+
+    .topline {
+        position:absolute;
+        height: 33%;
+        width: 100%;
+        background-color: #FFB25B;
+    }
+
+    .orangecircle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #FFB25B;
+        left: 39%;
+        top: 35%;
+    }
+
+    .bottomline {
+        position: absolute;
+        height: 33%;
+        width: 550px;
+        background-color: #009639;
+        top: 66%;
+    }
+
+
