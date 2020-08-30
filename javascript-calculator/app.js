@@ -24,7 +24,7 @@ var Calculation = function(num1, num2, operation) {
         }
         
         console.log("The result is: " + result);
-    };
+    }
 }
             
 var num1 = readline.question('Please enter your first number ');
