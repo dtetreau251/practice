@@ -9,40 +9,41 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-const enemies = ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"];
+const enemies = ["Lex", "Batman", "Darkseid", "Brainiac", "General Zod", "Doomsday"];
 
-function whoWins(isThereKryptonite,enemyName) {
+function whoWins(isThereKryptonite, enemies) {
     if (!isThereKryptonite) {
-        return "Superman beats " + enemyName + ", of course";
+        return "Superman beats " + enemies + ", of course";
     } else {
-        return "Depends on how quick Superman can get rid of the Kryptonite. " + enemyname + " could possibly win this one.";
+        return "Depends on how quick Superman can get rid of the Kryptonite. " + enemies + " could possibly win this one.";
     }
 }
-    for (var i = 0; i < enemies.length; i++) {
-        const isThereKryptonite;
-        if (i % 2 === 0) {
-            isThereKryptonite = true;
-        } else {
-            isThereKryptonite = false;
-        }
-        console.log(whoWins(isThereKryptonite, enemies[i]));
-    }
 
-    function howAttractedIsLoisLaneToMe () {
-        // 1 is not at all attracted, 10 is "super" attracted...
-        return Math.floor((Mat.random()*10)+1);
+for (var i = 0; i < enemies.length; i++) {
+    let isThereKryptonite;
+    if (i % 2 === 0) {
+        isThereKryptonite = true;
+    } else {
+        isThereKryptonite = false;
     }
-    console.log(howAttractedIsLoisLaneToMe());
+    console.log(whoWins(isThereKryptonite, enemies[i]));
+}
 
-    const clarkKent = true;
-    const superman = false;
-
-    while (clarkKent) {
-        console.log("I'm just a nerdy columnist");
-        var phoneBoothQuickChange = Math.random();
-        if (phoneBoothQuickChange >= 0.5) {
-            clarkKent = false;
-            superman = true;
-            console.log("Now I'm Superman!");
-        }
+function howAttractedIsLoisLaneToMe() {
+// 1 is not at all attracted, 10 is "super" attracted...
+    return Math.floor((Math.random() * 10) + 1);
     }
+console.log(howAttractedIsLoisLaneToMe());
+
+let clarkKent = true;
+let superman = false;
+
+while (clarkKent) {
+    console.log("I'm just a nerdy columnist");
+    let phoneBoothQuickChange = Math.random();
+    if (phoneBoothQuickChange >= 0.5) {
+        clarkKent = false;
+        superman = true;
+        console.log("Now I'm Superman!");
+    }
+}
