@@ -23,6 +23,8 @@ form.addEventListener("submit", function createNew(e){
     const editButton = document.createElement("button")
     //creates a delete button//
     const deleteButton = document.createElement("button")
+    //saves content when you edit it//
+    const saveButton = document.createElement("button")
     
     //adds item numbers and increments//
     div.id = "todos" + count
@@ -32,6 +34,7 @@ form.addEventListener("submit", function createNew(e){
     h1.textContent = userInput
     editButton.textContent = "edit"
     deleteButton.textContent = "X"
+    saveButton.textContent = "save"
     
     //appends the list to the new div//
     document.getElementById("list").append(div)
@@ -39,6 +42,7 @@ form.addEventListener("submit", function createNew(e){
     div.appendChild(h1)
     div.appendChild(editButton)
     div.appendChild(deleteButton)
+    div.appendChild(saveButton)
 
     //deletes item from the list//
     deleteButton.addEventListener("click", () => deleteItem(div))
@@ -46,11 +50,21 @@ form.addEventListener("submit", function createNew(e){
     div.remove()
     }
 
-    //edits item from the list//
-    editButton.addEventListener("click", () => editItem(list))
+    //adds event listener for edit button//
+    editButton.addEventListener("cl
+    ick", () => editItem(list))
 
+    //makes the HTML editable after the edit button is clicked//
     function editItem(list) {
     document.getElementById("list").contentEditable = "true";
+    }
+
+    //adds event listener for save button//
+    saveButton.addEventListener("click", () => saveItem(list))
+
+    //saves the changes//
+    function saveItem(list) {
+    document.getElementById("list").contentEditable = "false";
     }
 })
 
